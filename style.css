@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Space+Mono:wght@400;700&family=Sulphur+Point:wght@300;400;700&display=swap');
 
 
-/* quick reset so all our padding is the right size */
+
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  position: fixed; /* or absolute */
+  position: fixed;
   top: 50%;
   left: 50%;
   margin: -212.5px 0 0 -160px;
