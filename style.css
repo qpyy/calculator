@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Space+Mono:wght@400;700&family=Sulphur+Point:wght@300;400;700&display=swap');
+
+
+/* quick reset so all our padding is the right size */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  background: #efefef;
+}
+
+.container {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  margin: -212.5px 0 0 -160px;
+}
+
+.calculator {
+    max-width:320px;
+    background: #eee;
+}
+
+.calculator-buttons {
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px 15px;
+    border:0;
+}
+
+.calc-numbers {
+  font-size: 2em;
+  font-family: 'Sulphur Point', serif;
+  background: #efefef;
+  color: #444;
+  border: 2px solid transparent;
+  outline:none;
+  padding: 0.3em;
+  text-align: right;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 1.5rem;
+  transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.calc-numbers:focus, input:hover {
+  padding: .2rem 1rem;
+  border: 2px solid transparent;
+  border-bottom-color: #7a9cc6;
+}
+
+.span-2{
+    grid-column: span 2;
+}
+.span-3{
+    grid-column: span 3;
+}
+.btn{
+  height: 65px;
+  background: #efefef;
+  border: none;
+  border-radius: .5rem;
+  color: #444;
+  font-size: 1.4rem;
+  letter-spacing: .2rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+              -6px -6px 10px rgba(255, 255, 255, .5),
+              6px 6px 8px rgba(255, 255, 255, .075),
+              6px 6px 10px rgba(0, 0, 0, .15);
+}
+
+.btn:hover{
+  font-size: 1.35rem;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+              -2px -2px 4px rgba(255, 255, 255, .4),
+              2px 2px 2px rgba(255, 255, 255, .05),
+              2px 2px 4px rgba(0, 0, 0, .1);
+}
+
+.btn:active {
+  font-size: 1.32rem;
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+              inset -2px -2px 4px rgba(255, 255, 255, .5),
+              inset 2px 2px 2px rgba(255, 255, 255, .075),
+              inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
+
+.orange{
+  color: #7a9cc6;
+}
+
+
